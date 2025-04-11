@@ -1,6 +1,6 @@
 Feature: Funcionalidades principais da Amazon
 
-# 🔐 Login com sucesso
+# Login com sucesso
   Scenario: Fazer login com credenciais válidas
     Given o usuário está na página de login da Amazon
     When ele preenche o campo de e-mail com "usuario@teste.com"
@@ -8,7 +8,7 @@ Feature: Funcionalidades principais da Amazon
     And clica no botão "Entrar"
     Then ele deve ser redirecionado para a página inicial logado
 
-  # ❌ Login com erro
+  # Login com erro
   Scenario: Tentar login com credenciais inválidas
     Given o usuário está na página de login da Amazon
     When ele preenche o campo de e-mail com "usuario@teste.com"
